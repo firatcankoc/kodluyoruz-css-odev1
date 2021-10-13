@@ -1,0 +1,48 @@
+/*body genelinde arka plan rengi ve yazı rengi belirlendi*/
+body {
+    color: #F3F2C9;
+    background-color: #003638;
+} 
+
+/*grid bloklarını içinde barındıran container elementinin yapısı belirlendi*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% auto auto auto;
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+/*grid-container içindeki bölümlerin sahip olacağı kenar boşlukları belirlendi*/
+.grid-container > div {   
+    padding: 5px 0;
+}
+
+/*standart grid hücrelerinin arka planı rengi ve text yapısı belirlendi.*/
+.item {
+    background-color:#53B8BB;
+    text-align: center;
+}
+
+/*sayfalar arasında geçiş yapılan menünün yapısı grid yapısı, arka plan rengi ve font büyüklüğü belirlendi.*/
+.menu {
+    background-color:#53B8BB;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    font-size:30px;
+}
+
+/*sayfanın en üstündeki ve en altındaki geniş grid hücrelerinin yapıları estetik özellikleri belirlendi.*/
+.item-wide {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color:#055052;
+}
+
+/*about-us ve index dosyalarında geniş yapılı grid hücrelerinin yapıları ve estetik özellikleri belirlendi.*/
+.item-inner-wide {
+    background-color:#53B8BB;
+    text-align: left;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
